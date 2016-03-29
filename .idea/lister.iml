@@ -168,6 +168,10 @@
     <orderEntry type="jdk" jdkName="RVM: ruby-2.3.0" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="bootstrap-material-design (v0.2.2, RVM: ruby-2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.4.1, RVM: ruby-2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v4.1.1, RVM: ruby-2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sdoc (v0.4.1, RVM: ruby-2.3.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.2, RVM: ruby-2.3.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v3.0.0, RVM: ruby-2.3.0) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">

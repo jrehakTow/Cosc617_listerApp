@@ -16,7 +16,9 @@ class ItemsController < ApplicationController
 
   # GET /items/new
   def new
+    choosenListID = 1
     @item = Item.new
+    @list = List.where(id: choosenListID)
   end
 
   # GET /items/1/edit
@@ -74,4 +76,7 @@ class ItemsController < ApplicationController
     def item_params
       params.require(:item).permit(:name, :description, :quantity)
     end
+  def item_params_new
+    params.require(:item).permit(:name, :description, :quantity, :list_id)
+  end
 end

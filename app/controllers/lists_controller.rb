@@ -4,17 +4,18 @@ class ListsController < ApplicationController
 
   # GET /lists
   # GET /lists.json
+
   def index
     @lists = List.all
     choosenListID = 1
-    @items = Item.where(list_id: choosenListID)
+    #@items = Item.where(list_id: choosenListID)
   end
 
   # GET /lists/1
   # GET /lists/1.json
   def show
     #show list of items for related list
-    choosenListID = 1
+    choosenListID = params[:id]
     @items = Item.where(list_id: choosenListID)
   end
 

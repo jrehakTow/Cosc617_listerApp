@@ -22,7 +22,7 @@
   </thead>
 
   <tbody>
-  <% @items.each do |item| %>
+  <%= @items.each do |item| %>
       <tr>
         <td><%= item.name %></td>
         <td><%= item.description %></td>
@@ -35,6 +35,6 @@
   </tbody>
 </table>
 
-
-<%= link_to 'Edit', edit_list_path(@list) %> |
+<%= link_to 'New Item', new_item_path(@item) %> |
+<%= link_to 'Edit List Name', edit_list_path(@list) %> |
 <%= link_to 'Back', lists_path %>

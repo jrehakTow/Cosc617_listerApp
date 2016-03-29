@@ -6,7 +6,6 @@ class ListsController < ApplicationController
   # GET /lists.json
   def index
     @lists = List.all
-    #repeated!
     choosenListID = 1
     @items = Item.where(list_id: choosenListID)
   end

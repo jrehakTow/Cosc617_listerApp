@@ -15,8 +15,8 @@ class ListsController < ApplicationController
   # GET /lists/1.json
   def show
     #show list of items for related list
-    choosenListID = params[:id]
-    @items = Item.where(list_id: choosenListID)
+    @choosenListID = params[:id]
+    @items = Item.where(list_id: params[:id])
   end
 
   # GET /lists/new
